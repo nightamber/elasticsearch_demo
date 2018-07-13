@@ -1,0 +1,25 @@
+
+group 'xin.mrbear'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://s3.amazonaws.com/download.elasticsearch.org/lucenesnapshots/00142c9'
+    }
+}
+
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.elasticsearch.client/transport
+    compile group: 'org.elasticsearch.client', name: 'transport', version: '6.3.1'
+
+    // https://mvnrepository.com/artifact/junit/junit
+    compile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'org.apache.logging.log4j:log4j-core:2.9.1'
+}
