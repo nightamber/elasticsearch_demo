@@ -11,8 +11,6 @@ public class ESUtil {
 
     private static TransportClient client;
 
-
-
     public static TransportClient getClient() throws UnknownHostException {
         Settings settings = Settings.builder().put("cluster.name", "my-application").build();
         client = new PreBuiltTransportClient(settings)

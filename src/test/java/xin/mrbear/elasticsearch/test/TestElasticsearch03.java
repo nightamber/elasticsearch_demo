@@ -51,6 +51,6 @@ public class TestElasticsearch03 {
         util.query(qb).print();
     }
 
-    
+
 
 }
